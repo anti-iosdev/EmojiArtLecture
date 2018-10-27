@@ -131,6 +131,31 @@
                                             <outlet property="label" destination="edu-it-rq0" id="uWw-ql-QA2"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DropPlaceholderCell" id="GSq-vj-F8P">
+                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-5i-3an">
+                                                    <rect key="frame" x="40" y="40" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Zx9-GE-Dnp">
+                                                    <rect key="frame" x="30" y="30" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="eEc-5i-3an" firstAttribute="centerX" secondItem="GSq-vj-F8P" secondAttribute="centerX" id="YEs-J7-BKU"/>
+                                            <constraint firstItem="Zx9-GE-Dnp" firstAttribute="centerY" secondItem="GSq-vj-F8P" secondAttribute="centerY" id="Zjy-cC-iab"/>
+                                            <constraint firstItem="Zx9-GE-Dnp" firstAttribute="centerX" secondItem="GSq-vj-F8P" secondAttribute="centerX" id="oca-kt-kru"/>
+                                            <constraint firstItem="eEc-5i-3an" firstAttribute="centerY" secondItem="GSq-vj-F8P" secondAttribute="centerY" id="tf7-Qj-exz"/>
+                                        </constraints>
+                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
