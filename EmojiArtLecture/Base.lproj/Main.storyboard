@@ -156,6 +156,69 @@
                                             <constraint firstItem="eEc-5i-3an" firstAttribute="centerY" secondItem="GSq-vj-F8P" secondAttribute="centerY" id="tf7-Qj-exz"/>
                                         </constraints>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddEmojiButtonCell" id="5KJ-Kt-jac">
+                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nm3-Qt-F1i">
+                                                    <rect key="frame" x="40" y="40" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-oS-1g6">
+                                                    <rect key="frame" x="20.5" y="-4.5" width="39" height="89"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                    <state key="normal" title="+"/>
+                                                    <connections>
+                                                        <action selector="addEmoji" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUI-Dd-h0w"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Nm3-Qt-F1i" firstAttribute="centerY" secondItem="5KJ-Kt-jac" secondAttribute="centerY" id="Bto-Dt-anA"/>
+                                            <constraint firstItem="xmL-oS-1g6" firstAttribute="centerY" secondItem="5KJ-Kt-jac" secondAttribute="centerY" id="Pfw-iU-KlJ"/>
+                                            <constraint firstItem="xmL-oS-1g6" firstAttribute="centerX" secondItem="5KJ-Kt-jac" secondAttribute="centerX" id="fIO-Ts-APo"/>
+                                            <constraint firstItem="Nm3-Qt-F1i" firstAttribute="centerX" secondItem="5KJ-Kt-jac" secondAttribute="centerX" id="h1X-wj-C9k"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmojiInputCell" id="Nb2-hV-MvY" customClass="TextFieldCollectionViewCell" customModule="EmojiArtLecture" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-WT-b1X">
+                                                    <rect key="frame" x="40" y="40" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2TZ-eT-ifN">
+                                                    <rect key="frame" x="8" y="28" width="64" height="44"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="aRO-WT-b1X" firstAttribute="centerY" secondItem="Nb2-hV-MvY" secondAttribute="centerY" id="4Is-UH-K9l"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="2TZ-eT-ifN" secondAttribute="trailing" id="T80-ze-Mue"/>
+                                            <constraint firstItem="2TZ-eT-ifN" firstAttribute="leading" secondItem="Nb2-hV-MvY" secondAttribute="leadingMargin" id="avY-1m-PjK"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="2TZ-eT-ifN" secondAttribute="bottom" id="fSW-EC-x5J"/>
+                                            <constraint firstItem="2TZ-eT-ifN" firstAttribute="top" secondItem="Nb2-hV-MvY" secondAttribute="topMargin" id="rLh-DI-Spg"/>
+                                            <constraint firstItem="aRO-WT-b1X" firstAttribute="centerX" secondItem="Nb2-hV-MvY" secondAttribute="centerX" id="vnf-kM-6fb"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="textField" destination="2TZ-eT-ifN" id="YVa-cl-CoQ"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
